@@ -21,3 +21,119 @@ ul {
     background-color: #001f74;
     height: 55px;
 }
+
+main {
+    /*delineamento do corpo [ENCONTRA-SE NO CABEÇALHO]*/
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+
+.logo {
+    /*lôgo MTH (precisa de retoque transparente)*/
+    float: left;
+    width: 50%;
+}
+
+.redes-sociais ul li {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.redes-sociais {
+    width: 30%;
+    float: right;
+}
+
+.col-100 {
+    width: 100%;
+    background-color: #89c6ff;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.header-2 {
+    background-color: #89c6ff;
+    margin: 0px auto;
+    padding: 25px;
+    width: 980px;
+}
+
+.menu {
+    width: 70%;
+    margin-top: -16px;
+    float: left;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 18px;
+    margin-bottom: -16px;
+    height: 50px;
+}
+
+.menu ul li a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13pt;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+}
+
+.menu ul li a:hover {
+    color: rgb(114, 53, 255);
+    font-weight: 100;
+    border-bottom: 3px solid #001f74;
+}
+
+.busca input {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    outline: none;
+    margin-top: -5px;
+    padding: 10px 20px 10px 1px;
+    height: 2px;
+    background-image: url('../_media/_img/search.png');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    font-size: 14pt;
+    transition: .2s ease-in-out 0s;
+}
+
+.busca input:hover {
+    border: 1px solid #008cff;
+}
+
+form {
+    border: 5px solid #868686;
+    width: 980px;
+    margin: 5px auto;
+    background-color: #d6d6d6;
+}
+
+fieldset {
+    margin-top: 8px;
+    border: none;
+    background-color: #cacaca;
+}
+
+fieldset legend {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14pt;
+    background-color: #636363;
+    width: 50%;
+    margin-bottom: 18px;
+    border-radius: 5px;
+}
+
+fieldset table {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table tr {
+    border: 1px solid #000;
+}
