@@ -6,7 +6,7 @@ $('.slider-principal').slick({
     adaptiveHeight: true,
     variableWidth: true,
     centerMode: true,
-    centerPadding: '190px',
+    centerPadding: '50px',
     autoplay: true,
     autoplaySpeed: 2000
 });

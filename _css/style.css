@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 ul {
@@ -149,8 +150,8 @@ button.slick-next {
     right: 12%;
 }
 
+/*está relacionado aos ícones do slider (AS TRÊS BOLINHAS {todos que forem "slick", abaixo:})*/
 .slick-initialized {
-    /*está relacionado aos ícones do slider (AS TRÊS BOLINHAS {todos que forem "slick", abaixo:})*/
     overflow-x: hidden;
 }
 
@@ -180,31 +181,86 @@ button.slick-next {
 li.slick-active button {
     background: #89ceff;
 }
+
 /*configuração da parte textual[]start*/
 .text {
-    width: 60%;
     position: absolute;
-    top: 560px;
-    left: 300px
+    top: 600px;
 }
 
 .texto-destaque {
+    width: 50%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .texto-destaque h1 {
     text-transform: uppercase;
     font-size: 30px;
     color: #818181;
+    margin-top: 2em;
 }
 
 .texto-destaque strong {
     color: #646464;
 }
 
-.texto-destaque p{
+.texto-destaque p {
     line-height: 20pt;
     color: #9a9a9a;
     font-size: 15px;
 }
+
+.col-3 {
+    width: 30%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 100px;
+}
+
+.text-block h3 {
+    font-weight: normal !important;
+    text-align: center;
+    color: #646464;
+}
+
+.text-block p {
+    text-align: center;
+    color: #818181
+}
+
+.text-block img {
+    position: relative;
+    left: 35%;
+}
+
+.middle {
+    margin-top: 80px;
+}
+
 /*end*/
+
+.biblio {
+    display: inline-flex;
+    position: absolute;
+    top: 1200px;
+    margin-top: 220px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #ff6e2b;
+    align-items: baseline;
+    left: -60px
+}
+
+.biblio figure {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.biblio figcaption {
+    color: #ffffff;
+    text-align: center;
+}
