@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    font-family: 'Abel', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0 !important;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #001f74;
+    height: 55px;
+}
