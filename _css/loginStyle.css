@@ -4,6 +4,7 @@
 * {
     font-family: 'Abel', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -46,42 +47,65 @@ main {
 
 .login-area {
 	/*AREA DO LOGIN*/
-	width: 450px;
+    height: auto;
+	width: 420px;
     margin: 8% auto;
-    margin-bottom: 8%;
+    margin-bottom: 14%;
 }
 
 .login-area table {
-    padding: 12%;
+    padding: 20px 40px 20px 40px;
     width: 100%;
 	margin: auto;
 	border: 5px solid #ff6b2185;
 	background-color: #ffffff;
 }
 
+.login-area tr td input {
+    border: none;
+    border-radius: 12px;
+    padding: 3px 3px 3px 5px;
+    background-color: #fff;
+    box-shadow: -1px 1px 2px #aaaaaa;
+    outline: none;
+    border: 1px dotted #c7c7c7;
+}
+
 .login-area .botao {
     float: right;
     margin-top: 15px;
+    border: 1px solid rgb(179, 179, 179);
     border-radius: 4px;
     padding: 4px 18px 4px 18px;
-    background: -webkit-linear-gradient(45deg, #020024 0%, #093079 14%, #00d4ff 45%, #78c6c4 69%, #fb9700 82%, #f0b807 100%) no-repeat;
-    background-size: 200%;
-    color: #d3d3d3;
+    background-color: transparent;
+    background-size: 0%;
+    color: #8b8b8b;
     transition: 500ms ease-in-out 0s;
 }
 
 .login-area .botao:hover {
     border: 1px solid #020024;
     color: #000000;
-    background-color:#ffffff57;
-    background-size: 10%;
+    background: -webkit-linear-gradient(45deg, #020024 0%, #093079 14%, #00d4ff 45%, #78c6c4 69%, #99ebff 82%, #a4ffff 100%) no-repeat;
+    box-shadow: 0px 2px 11px #003750;
+    background-size: 200%;
+}
+
+.login-area .links td li a {
+    color: #aaaaaa;
+    transition: all 0s;
+}
+
+.login-area .links td li a:hover {
+    color: #00d4ff;
+    text-shadow: 0px 4px 5px #a4ffff;
 }
 
 .rodape {
     display: inline-block;
 	width: 100%;
     background-color: #001f74;
-    height: 200px;
+    height: 100%;
     margin: auto;
     margin-bottom: -10px;
 }
@@ -94,7 +118,7 @@ main {
 }
 
 .logo-rodape {
-    margin-top: 2%;
+    margin-top: 0;
 	float: left;
     width: 32%;
 }
