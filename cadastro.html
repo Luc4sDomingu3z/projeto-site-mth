@@ -70,19 +70,16 @@
 
 					<li>
 						<a href="#">Intranet</a>
-						<ul>
-							<li class="sub-menu"><a href="./cadastro.html">Cadastre-se</a></li>
-							<li class="sub-menu"><a href="./logi.html">Login</a></li>
-						</ul>
+							<li><a href="./cadastro.html" class="sub-menu">Cadastre-se</a></li>
+							<li><a href="./login.html" target="_blank" class="sub-menu">Login</a></li>
 					</li>
 
 					<li>
-						<a href="#">Serviços</a>
-						<ul>
-							<li class="sub-menu"><a href="#">Developers</a></li>
-							<li class="sub-menu"><a href="#">Design</a></li>
-							<li class="sub-menu"><a href="#">Internet</a></li>
-						</ul>
+						<!-- SUBMENUS -->
+						<a href="#">Serviços</a> 
+							<li><a href="#" class="sub-menu">Developers</a></li>
+							<li><a href="#" class="sub-menu">Design</a></li>
+							<li><a href="#" class="sub-menu">Internet</a></li>
 					</li>
 
 				</ul>
@@ -109,14 +106,16 @@
 					</td>
 
 					<td align="left">
-						<input type="text" name="nome">
+						<input type="text" name="nome" size="30" placeholder="Digite seu nome">
 					</td>
 
 					<td>
-						<label for="sobrenome">Sobrenome:</label </td>
+						<label for="sobrenome">Sobrenome:</label> 
+					
+					</td>
 
 					<td align="left">
-						<input type="text" name="sobrenome">
+						<input type="text" name="sobrenome" placeholder="Digite seu sobrenome" size="30">
 					</td>
 				</tr>
 				<!--FIM DA PRIMEIRA LINHA-->
@@ -126,8 +125,8 @@
 						<label>Nascimento:</label>
 					</td>
 					<td align="left">
-						<input type="text" name="dia" size="2" maxlength="2" placeholder="dia">
-						/ <input type="text" name="mes" size="2" maxlength="2" placeholder="mês">
+						<input type="text" name="dia" size="4" maxlength="2" placeholder="dia">
+						/ <input type="text" name="mes" size="4" maxlength="2" placeholder="mês">
 						/ <input type="text" name="ano" size="4" maxlength="4" placeholder="ano">
 					</td>
 				</tr>
@@ -189,7 +188,7 @@
 					</td>
 
 					<td align="left">
-						<input type="text" name="bairro" size="4">
+						<input type="text" name="bairro" size="20">
 					</td>
 				</tr>
 				<!--FIM DA SEGUNDA LINHA-->
@@ -250,8 +249,8 @@
 					</td>
 
 					<td align="left">
-						<input type="text" name="cep" size="5" maxlength="5" placeholder="EX: 69900">-<input type="text"
-							name="cep2" size="3" maxlength="3" placeholder="000">
+						<input type="text" name="cep" size="10" maxlength="5" placeholder="EX: 69900">-<input type="text"
+							name="cep2" size="5" maxlength="3" placeholder="000">
 					</td>
 				</tr>
 				<!--FIM DA QUINTA LINHA-->
@@ -325,9 +324,56 @@
 		</fieldset>
 		<!--FIM DO CAMPO DE FORMULÀRIO-->
 		<br />
-		<input type="submit" id="enviar">
-		<input type="reset" value="Limpar" id="clean">
+		<input type="submit" id="enviar" class="botao">
+		<input type="reset" value="Limpar" id="clean" class="botao">
 	</form>
+
+	<!--AREA DO RODAPE DO SITE [] start-->
+	<footer class="rodape">
+		<div class="fill-area">
+		
+			<div class="logo-rodape">
+				<img src="./_media/_img/logob.jpeg">
+			</div>
+			
+			<div class="text-footer">
+				<p>Texto de breve apresentação da empresa, como os serviços, localização, data da fundação. Este é um projeto de site onde tentarei demonstrar meu máximo de aprendizado com os ensinamento na empresa <strong>MTH.SOFT</strong>
+				</p>
+			</div>
+			
+			<div class="redes-sociaisFo">
+			
+				<ul>
+					<li>
+						<a href="#">
+							<img src="./_media/_img/wifi.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/facebook.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/twt.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/linkedin.png">
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+	</footer>
+<!--AREA DO RODAPE DO SITE [] end-->
 
 </body>
 
