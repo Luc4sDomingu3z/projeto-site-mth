@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    font-family: 'Abel', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #001f74;
+    height: 55px;
+}
+
+main {
+    /*delineamento do corpo [ENCONTRA-SE NO CABEÇALHO]*/
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    /*lôgo MTH (precisa de retoque transparente)*/
+    float: left;
+    width: 65%;
+	padding: 0px;
+}
+
+.redes-sociais ul li {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.redes-sociais {
+    width: 30%;
+    float: right;
+}
+
+.login-area {
+	/*AREA DO LOGIN*/
+	
+	width: 980px;
+	margin: 100px auto;
+}
+
+.login-area table {
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid #ff6b21;
+	background-color: #f5F5F5;
+}
+
+.login-area tbody {
+	width: 50px;
+	margin: 0 auto;
+}
+
+.rodape {
+	width: 100%;
+    background-color: #001f74;
+    height: 100%;
+}
+
+.fill-area {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+
+.logo-rodape {
+	width: 30%;
+	float: left;
+}
+
+.text-footer {
+	
+}
+
+.redes-sociaisFo {
+	
+}
