@@ -10,6 +10,7 @@ body {
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: aliceblue;
 }
 
 ul {
@@ -68,8 +69,8 @@ main {
     display: inline-block;
     color: #ffffff;
     margin-left: 18px;
-    margin-bottom: -16px;
-    height: 50px;
+    margin-bottom: -30px;
+    height: 30px;
 }
 
 .menu ul li a {
@@ -85,6 +86,19 @@ main {
     color: rgb(114, 53, 255);
     font-weight: 100;
     border-bottom: 3px solid #001f74;
+}
+
+.menu .sub-menu {
+    position: relative;
+    display: block;
+    transition: 500ms ease-in-out 0s;
+    color: rgb(255, 145, 0);
+    font-size: 8pt;
+    font-weight: 600;
+}
+
+.menu .sub-menu:hover {
+    display: contents;
 }
 
 .busca input {
@@ -106,34 +120,108 @@ main {
 }
 
 form {
-    border: 5px solid #868686;
+    border: 5px solid #fb79006b;
     width: 980px;
     margin: 5px auto;
-    background-color: #d6d6d6;
+    background-color: #ffffff;
 }
 
 fieldset {
     margin-top: 8px;
     border: none;
-    background-color: #cacaca;
+    background-color: #f3f3f3;
 }
 
 fieldset legend {
-    color: #fff;
+    color: rgb(126, 126, 126);
     text-align: center;
     text-transform: uppercase;
     font-size: 14pt;
-    background-color: #636363;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px #cacaca;
     width: 50%;
     margin-bottom: 18px;
-    border-radius: 5px;
+    border-radius: 200px;
 }
 
 fieldset table {
     margin: 0 auto;
     width: 80%;
+    
 }
 
-table tr {
-    border: 1px solid #000;
+table tr td input{
+    border: none;
+    border-radius: 12px;
+    padding: 3px 3px 3px 5px;
+    background-color: #fff;
+    box-shadow: -1px 1px 2px #aaaaaa;
+    outline: none;
+    border: 1px dotted #c7c7c7;
+    
+}
+
+.botao {
+    float: right;
+    margin: 12px 12px 20px 5px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 4px;
+    padding: 4px 18px 4px 18px;
+    background-color: transparent;
+    background-size: 0%;
+    color: #8b8b8b;
+    transition: 500ms ease-in-out 0s;
+}
+
+.botao:hover {
+    border: 1px solid #020024;
+    color: #000000;
+    background: -webkit-linear-gradient(45deg, #020024 0%, #093079 14%, #00d4ff 45%, #78c6c4 69%, #99ebff 82%, #a4ffff 100%) no-repeat;
+    box-shadow: 0px 2px 11px #003750;
+    background-size: 200%;
+}
+
+.rodape {
+    display: inline-block;
+	width: 100%;
+    background-color: #001f74;
+    height: 100%;
+    margin: auto;
+    margin-bottom: -10px;
+}
+
+.fill-area {
+	width: 980px;
+	margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.logo-rodape {
+    margin-top: 0;
+	float: left;
+    width: 32%;
+}
+
+.text-footer {
+    width: 30%;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-footer p {
+    color: #ff6b21;
+    font-size: 13px;
+    line-height: 19pt;
+    text-align: center;
+}
+
+.redes-sociaisFo {
+    width: 30%;
+    float: right;
+}
+
+.redes-sociaisFo li {
+    margin-left: 15px;
+    display: inline-block;
 }
