@@ -47,10 +47,9 @@ main {
 
 .login-area {
 	/*AREA DO LOGIN*/
-    height: auto;
-	width: 420px;
-    margin: 8% auto;
-    margin-bottom: 14%;
+    height: 100%;
+	width: 450px;
+    margin: 204px auto;
 }
 
 .login-area table {
@@ -59,6 +58,10 @@ main {
 	margin: auto;
 	border: 5px solid #ff6b2185;
 	background-color: #ffffff;
+}
+
+.login-area table tr {
+	font-size: 15pt;
 }
 
 .login-area tr td input {
@@ -92,6 +95,7 @@ main {
 }
 
 .login-area .links td li a {
+	font-size: 13pt;
     color: #aaaaaa;
     transition: all 0s;
 }
