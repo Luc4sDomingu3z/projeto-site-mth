@@ -4,6 +4,8 @@
 <head>
     <title>Projeto de Web Site</title>
     <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./_css/slick.css" />
     <link rel="stylesheet" href="_css/estilo.css" type="text/css">
 </head>
@@ -46,6 +48,10 @@
                     </ul>
                 </div>
 
+                <div class="busca">
+                    <input type="text" placeholder="Pesquise algo">
+                </div>
+
             </div>
         </main>
     </header>
@@ -86,18 +92,14 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="busca">
-                <input type="text" placeholder="Pesquise algo">
-            </div>
-
         </div>
     </main>
     <!--MENU INTERATIVO []end-->
 
+    <!--BANNER + SLIDER []start-->
     <div class="col-100-2">
-        <!--BANNER + SLIDER []start-->
-        
+        <button class="slick-prev"></button>
+        <button class="slick-next"></button>
     </div>
     <!--BANNER + SLIDER []end-->
 
@@ -141,7 +143,7 @@
         </figure>
 
         <figure>
-            <img src="./_media/_img/imagem2.png" id="middleImg">
+            <img src="./_media/_img/imagem2.png">
             <figcaption>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
             </figcaption>
@@ -154,6 +156,53 @@
             </figcaption>
         </figure>
     </aside>
+
+    <!--AREA DO RODAPE DO SITE [] start-->
+	<footer class="rodape">
+		<div class="fill-area">
+		
+			<div class="logo-rodape">
+				<img src="./_media/_img/logob.jpeg">
+			</div>
+			
+			<div class="text-footer">
+				<p>Texto de breve apresentação da empresa, como os serviços, localização, data da fundação. Este é um projeto de site onde tentarei demonstrar meu máximo de aprendizado com os ensinamento na empresa <strong>MTH.SOFT</strong>
+				</p>
+			</div>
+			
+			<div class="redes-sociaisFo">
+			
+				<ul>
+					<li>
+						<a href="#">
+							<img src="./_media/_img/wifi.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/facebook.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/twt.png">
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<img src="./_media/_img/linkedin.png">
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+	</footer>
+<!--AREA DO RODAPE DO SITE [] end-->
 
     <!--SCRIPTS PARA O FUNCIONAMENTO DO BANNER/SLIDER-->
     <script type="text/javascript" src="./_js/jquery.js"></script>

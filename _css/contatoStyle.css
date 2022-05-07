@@ -5,11 +5,16 @@
     font-family: 'Abel', sans-serif;
 }
 
+ul {
+    padding: 0 !important;
+}
+
 body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: aliceblue;
 }
 
 .menu-principal {
@@ -21,15 +26,14 @@ body {
 main {
     /*delineamento do corpo [ENCONTRA-SE NO CABEÇALHO]*/
     margin: 0 auto;
-    width: 980px;
     position: relative;
+    width: 980px;
 }
 
 .logo {
     /*lôgo MTH (precisa de retoque transparente)*/
     float: left;
     width: 65%;
-	padding: 0px;
 }
 
 .redes-sociais ul li {
@@ -42,87 +46,138 @@ main {
     float: right;
 }
 
-.header-2 {
-    background-color: #89c6ff;
-    width: 980px;
-    margin: 0px auto;
-    padding-top: 25px;
-}
-
-.menu ul li {
-    display: inline-block;
-    color: #ffffff;
-    margin-left: 18px;
-    margin-bottom: -16px;
-    height: 52px;
-}
-
-.menu ul li:hover {
-    border-bottom: 3px solid #000;
-}
-
-.menu ul li a {
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 10pt;
-    text-transform: uppercase;
-}
-
-.menu ul li a:hover {
-    color: #000;
-    font-weight: 100;
-}
-
-.menu {
-    width: 70%;
-    margin-top: -16px;
-    float: left;
-}
-
 .busca {
-    width: 30%;
-    float: right;
-    margin-top: 3px;
+    position: absolute;
+    top: 15px;
+    left: 95%;
 }
 
 .busca input {
-    border: 1px solid #d6d6d6;
-    text-align: center;
+    border-radius: 2px;
+    border: transparent;
     outline: none;
-    margin-top: -5px;
-    padding: 10px 20px 10px 1px;
-    height: 5px;
+    padding: 5px;
+    color: rgb(126, 126, 126);
     background-image: url('../_media/_img/search.png');
     background-position: 95%;
     background-repeat: no-repeat;
-    box-shadow: 1px 1px 5px #000;
-    font-size: 14pt;
-    transition: .2s ease-in-out 0s;
 }
 
-.busca input:hover {
-    border: 2px solid #008cff;
+/*Menu interativo [] start*/
+.header-2 {
+    background-color: #89c6ff;
+    margin: 0px auto;
+    width: 980px;
 }
 
+.menu {
+	list-style: none;
+	float: right;
+	margin-top: 5px;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14pt;
+	/*padding: 5px 10px;*/
+	text-transform: uppercase;
+}
+
+.menu li a:hover {
+	color: #000;
+}
+
+.menu li ul {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	display: none;
+	margin-top: 4px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.menu li:hover ul, .menu li.over ul {
+	display: block;
+}
+
+.menu li ul li {
+	display: block;
+	width: 150px;
+	padding: 6px;
+	border-radius: 2px;
+}
+
+.menu li ul li a {
+	text-transform: capitalize;
+	color: #f14901;
+	font-size: 14pt;
+	
+}
+/*Menu interativo [] end*/
 .col-100 {
     background-color: #89c6ff;
     width: 100%;
     border-bottom: 3px solid #e7e7e7;
-    height: 80px;
+    height: 50px;
 }
 
 .contac-area {
     background-color: #008cff;
-    margin-top: 500px;
-    width: 500px;
+    width: 510px;
     height: 100%;
-    margin: auto;
+    margin: 204px auto;
 }
 
 .contac-area table {
+    padding: 20px 5px 20px 5px;
     width: 100%;
-    margin: 0  auto;
+    margin: auto;
+    border-radius: 4px;
+    border: 5px solid #ff6b2185;
+    background-color: #ffffff;
+}
+
+.contac-area table tr {
+    font-weight: 500;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+.contac-area tr td input {
+    border-radius: 2px;
+    padding: 3px 3px 3px 5px;
+    background-color: #fff;
+    box-shadow: -1px 1px 2px #aaaaaa;
+    outline: none;
+    border: 1px dotted #c7c7c7;
+}
+
+.contac-area .botao {
+    float: right;
+    margin-top: 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 4px;
+    padding: 4px 18px 4px 18px;
+    background-color: transparent;
+    background-size: 0%;
+    color: #8b8b8b;
+    transition: 500ms ease-in-out 0s;
+}
+
+.contac-area .botao:hover {
+    border: 1px solid #020024;
+    color: #000000;
+    background: -webkit-linear-gradient(45deg, #020024 0%, #093079 14%, #00d4ff 45%, #78c6c4 69%, #99ebff 82%, #a4ffff 100%) no-repeat;
+    box-shadow: 0px 2px 11px #003750;
+    background-size: 200%;
 }
 
 /* rodape */
@@ -155,7 +210,7 @@ main {
 }
 
 .text-footer p {
-    color: #ff6b21;
+    color: #ffffff;
     font-size: 13px;
     line-height: 19pt;
     text-align: center;

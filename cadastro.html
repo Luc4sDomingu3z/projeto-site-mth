@@ -2,9 +2,10 @@
 <html lang="pt-br">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" cotent="Aprenda a criar um site completo que usa formulários em HTML">
 	<title>Como criar um formulário completo em HTML</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" cotent="Aprenda a criar um site completo que usa formulários em HTML">
 	<link rel="stylesheet" href="_css/regi-style.css">
 </head>
 
@@ -46,6 +47,10 @@
 					</ul>
 				</div>
 
+				<div class="busca">
+					<input type="text" placeholder="Pesquise algo">
+				</div>
+
 			</div>
 		</main>
 	</header>
@@ -54,8 +59,8 @@
 	<div class="col-100">
 		<!--MENU INTERATIVO []start-->
 		<div class="header-2">
-			<nav class="menu">
-				<ul>
+			<nav >
+				<ul class="menu">
 					<li>
 						<a href="./index.html">Home</a>
 					</li>
@@ -70,24 +75,24 @@
 
 					<li>
 						<a href="#">Intranet</a>
+						<ul>
 							<li><a href="./cadastro.html" class="sub-menu">Cadastre-se</a></li>
 							<li><a href="./login.html" target="_blank" class="sub-menu">Login</a></li>
+						</ul>
 					</li>
 
 					<li>
 						<!-- SUBMENUS -->
 						<a href="#">Serviços</a> 
+						<ul>
 							<li><a href="#" class="sub-menu">Developers</a></li>
 							<li><a href="#" class="sub-menu">Design</a></li>
 							<li><a href="#" class="sub-menu">Internet</a></li>
+						</ul>
 					</li>
 
 				</ul>
 			</nav>
-
-			<div class="busca">
-				<input type="text" placeholder="Search something">
-			</div>
 
 		</div>
 	</div>
@@ -188,7 +193,8 @@
 					</td>
 
 					<td align="left">
-						<input type="text" name="bairro" size="22"
+						<input type="text" name="bairro" size="22">
+					</td>
 				</tr>
 				<!--FIM DA SEGUNDA LINHA-->
 				<!--3ª LINHA DA CELULA [seleção de estados]-->
@@ -323,8 +329,8 @@
 		</fieldset>
 		<!--FIM DO CAMPO DE FORMULÀRIO-->
 		<br />
-		<input type="submit" id="enviar" class="botao">
-		<input type="reset" value="Limpar" id="clean" class="botao">
+		<input type="reset" value="Limpar" class="botao">
+		<input type="submit" value="Enviar" class="botao">
 	</form>
 
 	<!--AREA DO RODAPE DO SITE [] start-->

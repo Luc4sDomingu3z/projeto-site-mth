@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Abel', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 ul {
     padding: 0 !important;
 }
-
+/*Cabeçalho [] start*/
 .menu-principal {
     width: 100%;
     background-color: #001f74;
@@ -46,82 +47,164 @@ main {
     float: right;
 }
 
+.busca {
+    position: absolute;
+    top: 15px;
+    left: 95%;
+}
+
+.busca input {
+    border-radius: 2px;
+    border: transparent;
+    outline: none;
+    padding: 5px;
+    color: rgb(126, 126, 126);
+    background-image: url('../_media/_img/search.png');
+    background-position: 95%;
+    background-repeat: no-repeat;
+}
+/*Responsividade do cabeçaçlho [] start*/
+@media (max-width: 992px) {
+    .menu-principal {
+        position: relative;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+		width: 100%;
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 980px) {
+    .busca {
+        width: 20%;
+        margin: auto;
+        left: 1%;
+        top: 60%;
+    }
+    .busca input {
+        background-color: #6bd0ff6b;
+        font-size: 0;
+        padding: 12px;
+        width: 5%;
+        border: 1px solid #89c6ff;
+        transition: 500ms ease-in-out 0s;
+    }
+    .busca input:hover {
+        background-color: #ffffff;
+        background-position: -200%;
+        font-size: 14px;
+        padding: 3px;
+        width: 90px;
+        border: 1px solid #f14901;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .redes-sociais {
+        margin: auto;
+        width: 85%;
+        
+    }
+    .redes-sociais ul li {
+        width: 4%;
+        margin-left: 4px;
+        display: inline-flex;
+    }   
+}
+/*Responsividade do cabeçaçlho [] end*/
+/*Cabeçalho [] end*/
+/*Menu interativo [] start*/
 .col-100 {
     width: 100%;
     background-color: #89c6ff;
     border-bottom: 2px solid #d6d6d6;
+    height: 50px;
 }
 
 .header-2 {
     background-color: #89c6ff;
     margin: 0px auto;
-    padding: 25px;
     width: 980px;
 }
 
 .menu {
-    width: 70%;
-    margin-top: -16px;
-    float: left;
+	list-style: none;
+	float: right;
+	margin-top: 5px;
+	padding: 5px, 5px;
 }
 
-.menu ul li {
-    display: inline-block;
-    color: #ffffff;
-    margin-left: 18px;
-    margin-bottom: -30px;
-    height: 30px;
+.menu li {
+	position: relative;
+	float: left;
+	margin-right: 20px;
 }
 
-.menu ul li a {
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 13pt;
-    text-transform: uppercase;
-    padding-bottom: 22px;
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14pt;
+	/*padding: 5px 10px;*/
+	text-transform: uppercase;
 }
 
-.menu ul li a:hover {
-    color: rgb(114, 53, 255);
-    font-weight: 100;
-    border-bottom: 3px solid #001f74;
+.menu li a:hover {
+	color: #000;
 }
 
-.menu .sub-menu {
-    position: relative;
-    display: block;
-    transition: 500ms ease-in-out 0s;
-    color: rgb(255, 145, 0);
-    font-size: 8pt;
-    font-weight: 600;
+.menu li ul {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	display: none;
+	margin-top: 4px;
+	border-radius: 2px;
+	background-color: #fff;
 }
 
-.menu .sub-menu:hover {
-    display: contents;
+.menu li:hover ul, .menu li.over ul {
+	display: block;
 }
 
-.busca input {
-    border: 1px solid #d6d6d6;
-    text-align: center;
-    outline: none;
-    margin-top: -5px;
-    padding: 10px 20px 10px 1px;
-    height: 2px;
-    background-image: url('../_media/_img/search.png');
-    background-position: 95%;
-    background-repeat: no-repeat;
-    font-size: 14pt;
-    transition: .2s ease-in-out 0s;
+.menu li ul li {
+	display: block;
+	width: 150px;
+	padding: 6px;
+	border-radius: 2px;
 }
 
-.busca input:hover {
-    border: 1px solid #008cff;
+.menu li ul li a {
+	text-transform: capitalize;
+	color: #f14901;
+	font-size: 14pt;
+	
 }
 
+@media (max-width: 830px) {
+    .col-100 {
+        width: 100%;
+    }
+    .header-2 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*menu-interativo e sub-menu []end*/
+/*Campo de formulario - cadastros [] start*/
 form {
-    border: 5px solid #fb79006b;
     width: 980px;
+    border: 5px solid #fb79006b;
+    border-radius: 5px;
     margin: 5px auto;
     background-color: #ffffff;
 }
@@ -141,18 +224,21 @@ fieldset legend {
     box-shadow: 0px 2px 10px #cacaca;
     width: 50%;
     margin-bottom: 18px;
-    border-radius: 200px;
+    border-radius: 2px;
 }
 
 fieldset table {
     margin: 0 auto;
     width: 80%;
-    
+}
+
+table tr td {
+    font-size: 13pt;
 }
 
 table tr td input{
     border: none;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 3px 3px 3px 5px;
     background-color: #fff;
     box-shadow: -1px 1px 2px #aaaaaa;
@@ -163,7 +249,7 @@ table tr td input{
 
 .botao {
     float: right;
-    margin: 12px 12px 20px 5px;
+    margin: 12px 10px 20px 5px;
     border: 1px solid rgb(179, 179, 179);
     border-radius: 4px;
     padding: 4px 18px 4px 18px;
@@ -180,6 +266,30 @@ table tr td input{
     box-shadow: 0px 2px 11px #003750;
     background-size: 200%;
 }
+/*Campo de formulario - cadastros [] end*/
+/*Responsividade do campo de formulario [] start*/
+@media screen and (max-width: 992px) {
+    form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    tr td {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input#select-file {
+        width: 48%;
+    }
+    .botao {
+        width: 20%;
+        margin: 2px auto;
+    }
+}
+/*Responsividade do campo de formulario [] end*/
 
 .rodape {
     display: inline-block;
@@ -210,7 +320,7 @@ table tr td input{
 }
 
 .text-footer p {
-    color: #ff6b21;
+    color: #ffffff;
     font-size: 13px;
     line-height: 19pt;
     text-align: center;
@@ -225,3 +335,32 @@ table tr td input{
     margin-left: 15px;
     display: inline-block;
 }
+/*footer responsivo [] start*/
+@media (max-width: 500px) {
+    .rodape {
+        display: flex;
+    }
+    .fill-area {
+        width: 60%;
+        margin: auto;
+        height: 20%;
+    } 
+    .logo-rodape {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .text-footer {
+        width: 100%;
+        margin: auto;
+    }
+    .text-footer p {
+        text-align: justify;
+    }
+    .redes-sociaisFo {
+        width: 100%;
+    }
+    .redes-sociaisFo li {
+        margin: auto;
+    }
+}
+/*footer responsivo [] end*/
